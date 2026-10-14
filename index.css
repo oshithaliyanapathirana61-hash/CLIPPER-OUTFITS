@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@theme {
+  --font-syne: 'Syne', -apple-system, sans-serif;
+  --font-inter: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-container-low: #1b1c1c;
+  --color-surface-container: #202020;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353535;
+  --color-surface: #131313;
+  --color-background: #131313;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #c4c7c7;
+  --color-primary: #c9c6c5;
+  --color-on-primary: #313030;
+  --color-inverse-surface: #e5e2e1;
+  --color-inverse-on-surface: #303030;
+  --color-outline: #8e9192;
+  --color-outline-variant: #444748;
+  --color-secondary-fixed: #e2e2e2;
+  --color-secondary-container: #454747;
+  --color-on-secondary: #2f3131;
+}
+
+/* Custom Typography & Editorial Helpers */
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-display-hero {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(38px, 6vw, 72px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+.font-headline-xl {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.font-headline-lg {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(22px, 3vw, 32px);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.font-headline-md {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(18px, 2.5vw, 24px);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.font-headline-sm {
+  font-family: 'Syne', sans-serif;
+  font-size: 16px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+.font-label-caps-lg {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+}
+
+.font-label-caps-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+}
+
+.font-body-md {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.font-body-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.font-price-display {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
